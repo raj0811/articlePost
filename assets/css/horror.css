@@ -1,0 +1,10 @@
+body{
+    background-image: url('https://wallpapercosmos.com/w/full/1/d/4/1225744-3840x2160-desktop-4k-backdrop-wallpaper.jpg');
+}
+
+.mylist-mov{
+    border: 2px solid wheat;
+}
+.mylist-mov ul li{
+    color: aliceblue;
+}

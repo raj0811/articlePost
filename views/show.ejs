@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/show.css">
+    
+</head>
+<body>
+    <div class="main">
+
+        <% for (let data of articles) { %>
+            <div class="article">
+                <div class="article-date">
+                    Posted on: <%= data.postedAt.toISOString().slice(0, 10) %> at <%= data.postedAt.toLocaleTimeString() %>
+                </div>
+                <h2 class="article-title">
+                    <%= data.title %>
+                </h2>
+                <div class="article-description">
+                    <%= data.description %>
+                </div>
+                <span class="auther">By:  <%= data.auther%> </span>
+            </div>
+            <% } %>
+    </div>
+</body>
+</html>
