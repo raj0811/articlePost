@@ -29,7 +29,7 @@ app.use(session({
     },
     store: MongoStore.create({
 
-        mongoUrl: 'mongodb://localhost/article',
+        mongoUrl: 'mongodb+srv://mrunknown0086:TDBgZIIYtZI584fL@cluster0.xbxgs0v.mongodb.net/?retryWrites=true&w=majority',
         autoRemove: 'disabled'
 
     },
